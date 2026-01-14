@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - JCH 104 Simulator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../images/icon.png" alt="JCH 104" width="32" height="32">
+                <span>JCH 104 Simulator</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="support.html" class="active">Support</a>
+                <a href="legal.html">Legal Notice</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="../de/support.html" class="lang-switch">🇩🇪 Deutsch</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="legal-content">
+            <h1>Support</h1>
+            
+            <p>We're happy to help you with any questions or issues regarding the JCH 104 Simulator.</p>
+            
+            <div class="support-card">
+                <h3>📧 Email Support</h3>
+                <p>For technical questions or feedback, reach us at:<br>
+                <a href="mailto:support@jch-iec104.app">support@jch-iec104.app</a></p>
+            </div>
+            
+            <div class="support-card">
+                <h3>📖 Frequently Asked Questions</h3>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">How do I connect to a PLC?</h4>
+                <p>1. Switch to Client mode<br>
+                2. Enter the IP address and port (default: 2404) of your PLC<br>
+                3. Click "Connect"<br>
+                4. After successful TCP connection, click "STARTDT" to start data transfer</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">How do I test Server mode?</h4>
+                <p>1. Start the server on your iPad/Mac<br>
+                2. Load demo data points<br>
+                3. Connect with a second device in Client mode or a PLC/SCADA system</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">What does "Select before Execute" mean?</h4>
+                <p>When S/E is enabled, a SELECT command is sent first. The remote station must confirm this before the actual EXECUTE command is sent. This is a safety feature according to IEC 60870-5-104.</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Why is the connection being disconnected?</h4>
+                <p>Possible causes:<br>
+                • t1 timeout: No acknowledgment within 15 seconds<br>
+                • t3 timeout: No TESTFR response within 20 seconds<br>
+                • The remote station actively terminated the connection<br>
+                • Network issues</p>
+            </div>
+            
+            <div class="support-card">
+                <h3>📋 System Requirements</h3>
+                <ul>
+                    <li>iPad with iPadOS 17.0 or later</li>
+                    <li>Mac with macOS 14.0 (Sonoma) or later</li>
+                    <li>Apple Silicon recommended</li>
+                    <li>Network connection to remote station</li>
+                </ul>
+            </div>
+            
+            <div class="support-card">
+                <h3>🔗 Useful Links</h3>
+                <p>
+                    <a href="https://www.iec.ch" target="_blank">IEC - International Electrotechnical Commission</a><br>
+                    <a href="https://en.wikipedia.org/wiki/IEC_60870-5-104" target="_blank">Wikipedia: IEC 60870-5-104</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="legal.html">Legal Notice</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <p>&copy; 2024 JCH. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
