@@ -28,118 +28,100 @@
         <div class="legal-content">
             <h1>Privacy Policy</h1>
             
-            <h2>1. Privacy at a Glance</h2>
-            
-            <h3>General Information</h3>
+            <h2>Controller</h2>
             <p>
-                The following information provides a simple overview of what happens to your 
-                personal data when you use this app. Personal data is any data that can be 
-                used to personally identify you.
+                Joachim Christof Huben<br>
+                c/o flexdienst – #11403, Kurt-Schumacher-Straße 76, 67663 Kaiserslautern, Germany<br>
+                E-mail: <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a><br>
+                Phone: +49 15679 698581
             </p>
             
-            <h3>Data Collection in This App</h3>
-            <p>
-                <strong>Who is responsible for data collection in this app?</strong><br>
-                Data processing in this app is carried out by the app operator. Contact details 
-                can be found in the legal notice.
-            </p>
-            <p>
-                <strong>How do we collect your data?</strong><br>
-                This app collects <strong>no personal data</strong>. All settings and connection 
-                data are stored exclusively locally on your device.
-            </p>
-            
-            <h2>2. General Information and Mandatory Information</h2>
-            
-            <h3>Data Protection</h3>
-            <p>
-                The operator of this app takes the protection of your personal data very seriously. 
-                We treat your personal data confidentially and in accordance with statutory data 
-                protection regulations and this privacy policy.
-            </p>
-            
-            <h3>Note on the Responsible Party</h3>
-            <p>
-                The responsible party for data processing is indicated in the legal notice.
-            </p>
-            
-            <h2>3. Data Collection in the App</h2>
-            
-            <h3>What Data is Collected?</h3>
-            <p>This app stores the following data <strong>exclusively locally</strong> on your device:</p>
+            <h2>Types of Data Processed</h2>
             <ul>
-                <li>Connection settings (IP addresses, ports)</li>
-                <li>Saved connection profiles</li>
-                <li>App settings (language, accent color)</li>
-                <li>Data points in server mode</li>
-                <li>Protocol logs during use</li>
+                <li>Connection data for your configured IEC 60870-5-104 devices (IP address, port, Common Address)</li>
+                <li>IEC 104 stack parameters (k, w, t0-t3 timeouts)</li>
+                <li>Saved connection profiles (locally on the device)</li>
+                <li>Protocol logs (telegrams, timestamps) locally within the app only</li>
             </ul>
             
-            <h3>Is Data Transferred to Third Parties?</h3>
-            <p>
-                <strong>No.</strong> This app does not transfer any data to us or third parties. 
-                The only network communication occurs directly between your device and the 
-                remote station (PLC, RTU, SCADA system) you configure using the IEC 60870-5-104 protocol.
-            </p>
-            
-            <h3>IEC 60870-5-104 Communication</h3>
-            <p>
-                This app implements the IEC 60870-5-104 protocol for communication with 
-                industrial control systems. Communication occurs:
-            </p>
+            <h2>Purposes of Processing</h2>
             <ul>
-                <li>Via TCP/IP on the configured port (default: 2404)</li>
-                <li>Directly between your device and the remote station</li>
-                <li>Without intermediate storage on external servers</li>
-                <li>Without encryption (as specified in the IEC 104 standard)</li>
+                <li>Establishing and managing IEC 60870-5-104 connections to telecontrol devices</li>
+                <li>Displaying and filtering received telegrams and data points</li>
+                <li>Sending commands and queries</li>
+                <li>Optional manual export by the user</li>
             </ul>
             
-            <h2>4. No Analytics Tools</h2>
-            <p>
-                This app uses <strong>no</strong> analytics or tracking tools. 
-                No usage statistics are collected or transmitted to third parties.
+            <h2>Principle</h2>
+            <p style="background: #d4edda; padding: 16px; border-radius: 8px; border-left: 4px solid #28a745;">
+                <strong>✅ We do not process personal data on servers; all data remains locally on your device.</strong> There is no disclosure, no sale and no sharing of data.
             </p>
             
-            <h2>5. No Advertising</h2>
+            <h2>Legal Basis (EU/UK GDPR)</h2>
             <p>
-                This app contains <strong>no advertising</strong> and no advertising tracking mechanisms.
+                Art. 6(1)(b) GDPR (contract) and Art. 6(1)(a) GDPR (consent) where you voluntarily enter data (e.g., connection parameters).
             </p>
             
-            <h2>6. Data Deletion</h2>
-            <p>
-                You can delete all locally stored data at any time:
-            </p>
+            <h2>Recipients / Disclosure</h2>
             <ul>
-                <li>In the app under Settings → "Delete All Data"</li>
-                <li>By uninstalling the app</li>
+                <li>No disclosure to third parties by the app.</li>
+                <li>Communication occurs solely between your device and your configured IEC 104 devices.</li>
+                <li>Commands sent by you are transmitted solely to the connected device; the app acts as a client (controlling station) or server (controlled station).</li>
             </ul>
             
-            <h2>7. Your Rights</h2>
+            <h2>Storage Duration</h2>
+            <ul>
+                <li>Protocol logs are stored only temporarily in the app and are deleted on app restart or manually.</li>
+                <li>Saved connection profiles persist until you delete them.</li>
+            </ul>
+            
+            <h2>Permissions</h2>
+            <ul>
+                <li>Network access for TCP/IP communication with IEC 104 devices</li>
+                <li>No other device permissions (e.g., camera, location) are requested.</li>
+            </ul>
+            
+            <h2>Transport and Data Security</h2>
             <p>
-                Since we do not collect or store personal data, the usual rights to information, 
-                correction, and deletion do not apply. If you have any questions, please contact 
-                us at the email address provided in the legal notice.
+                IEC 60870-5-104 uses unencrypted TCP by default (port 2404). Connection security is the responsibility of the network operator (e.g., VPN, firewall, segmentation).
+            </p>
+            <p style="background: #fff3cd; padding: 16px; border-radius: 8px; border-left: 4px solid #ffc107;">
+                <strong>⚠️ Warning:</strong> Unprotected IEC 104 connections can be intercepted or manipulated. Use appropriate network security measures in production environments.
             </p>
             
-            <h2>8. Security Notice</h2>
+            <h2>Your Rights (EU/UK)</h2>
             <p>
-                <strong>Important:</strong> The IEC 60870-5-104 protocol transmits data unencrypted. 
-                Make sure you only use the app in trusted networks. This app is intended for 
-                testing and development purposes.
-            </p>
-            <p>
-                <strong>Warning:</strong> Sending commands to industrial control systems can have 
-                physical effects. Only use this app with appropriate authorization and expertise.
+                Access, rectification, erasure, restriction, objection, data portability (Arts. 15–21 GDPR). Contact as above.
             </p>
             
-            <h2>9. Changes to This Privacy Policy</h2>
+            <h2>UK Privacy (UK GDPR)</h2>
             <p>
-                We reserve the right to adapt this privacy policy so that it always complies with 
-                current legal requirements or to implement changes to our services in the privacy policy.
+                We comply with UK GDPR in addition to the EU GDPR. The above contact details also apply to the United Kingdom.
+            </p>
+            
+            <h2>California Privacy (CPRA)</h2>
+            <ul>
+                <li>We do not sell or share personal data.</li>
+                <li>Data is processed only locally on your device. No data is transmitted to us.</li>
+                <li>Privacy rights requests: <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a></li>
+                <li>Not intended for children; we do not knowingly collect data from minors.</li>
+            </ul>
+            
+            <h2>US State Privacy (VA/CO/CT/UT)</h2>
+            <ul>
+                <li>We do not sell or share personal data.</li>
+                <li>Data is processed only locally on your device. No data is transmitted to us.</li>
+                <li>Privacy rights requests (e.g., access/deletion): <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a></li>
+                <li>Not intended for children; we do not knowingly collect data from minors.</li>
+            </ul>
+            
+            <h2>Changes</h2>
+            <p>
+                These notices may be updated as needed.
             </p>
             
             <p style="margin-top: 32px; color: var(--text-secondary);">
-                <em>Last updated: January 2024</em>
+                <em>As of: January 2026</em>
             </p>
         </div>
     </main>
@@ -151,7 +133,7 @@
                 <a href="legal.html">Legal Notice</a>
                 <a href="privacy.html">Privacy</a>
             </div>
-            <p>&copy; 2024 JCH. All rights reserved.</p>
+            <p>&copy; 2024-2026 Joachim Christof Huben. All rights reserved.</p>
         </div>
     </footer>
 </body>
