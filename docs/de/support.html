@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - JCH 104 Simulator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../images/icon.png" alt="JCH 104" width="32" height="32">
+                <span>JCH 104 Simulator</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="support.html" class="active">Support</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="../en/support.html" class="lang-switch">🇬🇧 English</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="legal-content">
+            <h1>Support</h1>
+            
+            <p>Wir helfen Ihnen gerne bei Fragen oder Problemen mit dem JCH 104 Simulator.</p>
+            
+            <div class="support-card">
+                <h3>📧 E-Mail Support</h3>
+                <p>Für technische Fragen oder Feedback erreichen Sie uns unter:<br>
+                <a href="mailto:support@jch-iec104.app">support@jch-iec104.app</a></p>
+            </div>
+            
+            <div class="support-card">
+                <h3>📖 Häufige Fragen</h3>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Wie verbinde ich mich mit einer SPS?</h4>
+                <p>1. Wechseln Sie in den Client-Modus<br>
+                2. Geben Sie die IP-Adresse und den Port (Standard: 2404) Ihrer SPS ein<br>
+                3. Klicken Sie auf "Verbinden"<br>
+                4. Nach erfolgreicher TCP-Verbindung klicken Sie auf "STARTDT" um den Datentransfer zu starten</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Wie teste ich den Server-Modus?</h4>
+                <p>1. Starten Sie den Server auf Ihrem iPad/Mac<br>
+                2. Laden Sie Demo-Datenpunkte<br>
+                3. Verbinden Sie sich mit einem zweiten Gerät im Client-Modus oder einer SPS/Leitsystem</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Was bedeutet "Select before Execute"?</h4>
+                <p>Bei aktiviertem S/E wird zuerst ein SELECT-Befehl gesendet. Die Gegenstelle muss diesen bestätigen, bevor der eigentliche EXECUTE-Befehl gesendet wird. Dies ist eine Sicherheitsfunktion nach IEC 60870-5-104.</p>
+                
+                <h4 style="margin-top: 16px; margin-bottom: 8px;">Warum wird die Verbindung getrennt?</h4>
+                <p>Mögliche Ursachen:<br>
+                • t1-Timeout: Keine Bestätigung innerhalb von 15 Sekunden<br>
+                • t3-Timeout: Keine TESTFR-Antwort innerhalb von 20 Sekunden<br>
+                • Die Gegenstelle hat die Verbindung aktiv beendet<br>
+                • Netzwerkprobleme</p>
+            </div>
+            
+            <div class="support-card">
+                <h3>📋 Systemanforderungen</h3>
+                <ul>
+                    <li>iPad mit iPadOS 17.0 oder neuer</li>
+                    <li>Mac mit macOS 14.0 (Sonoma) oder neuer</li>
+                    <li>Apple Silicon empfohlen</li>
+                    <li>Netzwerkverbindung zur Gegenstelle</li>
+                </ul>
+            </div>
+            
+            <div class="support-card">
+                <h3>🔗 Nützliche Links</h3>
+                <p>
+                    <a href="https://www.iec.ch" target="_blank">IEC - International Electrotechnical Commission</a><br>
+                    <a href="https://en.wikipedia.org/wiki/IEC_60870-5-104" target="_blank">Wikipedia: IEC 60870-5-104</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>&copy; 2024 JCH. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>
